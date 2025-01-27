@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; /* Set the default body font size */
+    line-height: 1.5; /* Make the text easier to read */
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: whitesmoke;
+}
+
+/* body {
+    background: rgb(244, 241, 241);
+} */
+
+/* body {
+    background-color: black;
+    color: white;
+} */
+
+body {
+    background: #FAFAF2;
+}
+:root {
+    --whiteColor: #fff;
+    --blackColor: black;
+    --greenColor: #2F4F4F;
+    --woodColor: #D2B48C;
+    --eggShell: #FAFAF2;
+    --greyColor: #333;
+    --navbarBoxShadow: rgba(0, 0, 0, 0.3);
+    --aboutHead: rgba(0, 0, 0, 0.1);
+    --skillShadow: rgba(0, 0, 0, 0.1);
+    --dataShadow: rgba(0, 0, 0, 0.237);
+    --lightWood: #D2B48C;
+    --orangeColor: #d85f09;
+    --aboutData: rgba(0, 0, 0, 0.237);
+    --proCard: #FAF3E0;
+    --footerColor: #D2B48C;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    --whiteColor: #1a1a1a;        /* Near black for main background */
+    --blackColor: #FAFAF2;        /* Using your eggshell color for text */
+   /* --greenColor: #8FBC8F;        /* Light sage green - brighter version of your dark green */
+    --greenColor: #8A9A5B;  
+    --woodColor: #CE8940;         /* Rosewood - warmer version of your tan */
+    --eggShell: #2d2d2d;         /* Dark gray for secondary backgrounds */
+    --navbarBoxShadow: rgba(255, 255, 255, 0.1);
+    --aboutHead: rgba(255, 255, 255, 0.1);
+    --greyColor: #ADADAD;
+    --skillShadow: rgba(255, 255, 255, 0.1);
+    --proShadow: rgba(255, 255, 255, 0.2);
+    --dataShadow: rgba(255, 255, 255, 0.15);
+    --lightWood: #DBA968;
+    --orangeColor: #FF8C42;  /* or #FF7F50 for more visibility */
+    --aboutData: rgba(255, 255, 255, 0.237);
+    --proCard: #D0C8B4;
+    --footerColor: #fff;
+    background: #2d2d2d;
+}
+  

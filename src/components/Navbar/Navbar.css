@@ -1,0 +1,147 @@
+.section {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 60px;
+  z-index: 10;
+  display: flex;
+  align-items: center; /* Ensure proper vertical alignment */
+  justify-content: space-between;
+  padding: 0 11%; /* Horizontal padding for the content */
+  border-radius: 0px 0px 12px 12px; /* Rounded bottom corners */
+  background: var(--eggShell);
+}
+
+.head {
+  flex: 1; /* Take the remaining space to push "sun" to the right */
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition:0.4s ease;
+}
+
+.menu-list {
+  background: var(--blackColor);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  
+  background: black;
+  border-radius: 0px 0px 12px 12px;
+  width: 100%;
+  background-color: var(--greenColor);
+  
+}
+
+.list li, .items li {
+  list-style: none;
+}
+
+.list li a {
+  text-decoration: none;
+  color: var(--whiteColor);
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.list li a:hover {
+  color: var(--blackColor);
+  background: var(--woodColor);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px var(--navbarBoxShadow);
+}
+
+.sun-big {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-44%);
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.sun {
+  cursor: pointer;
+}
+
+.icon {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    z-index: 1100;
+    background: var(--greenColor);
+    color: var(--eggShell);
+    font-size: 12px;
+    cursor: pointer;
+    
+}
+
+.menu-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--whiteColor);
+    z-index: 1000;
+    
+}
+
+.menu-list .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    gap: 40px;
+}
+
+.menu-list .items a {
+    text-decoration: none;
+    color: var(--blackColor);
+    font-size: 22px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .head {
+    display: none;
+  }
+  .icon {
+    display: block;
+  }
+  .sun-big {
+    display: none;
+  }
+  .section {
+    padding: 6% 0;
+    background: var(--whiteColor);
+    background: var(--greenColor);
+  }
+}

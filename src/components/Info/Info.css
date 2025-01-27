@@ -1,0 +1,89 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--eggShell);
+    animation: pageIn 2s ease forwards;
+    padding: 0px 11%;
+}
+
+.info h1 {
+    margin: 100px auto 0px auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--greenColor);
+    text-decoration: underline;
+    text-decoration-color: #2F4F4F;
+    text-underline-offset: 8px;
+    padding-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-cont {
+    max-width: 220px;
+    text-align: center;
+    flex-basis: 40%;
+}
+
+.image-cont img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--greenColor);
+}
+
+.content .text-cont {
+    max-width: 500px;
+    flex-basis: 70%;
+    text-align: justify;
+}
+
+.content .text-cont p{
+    font-size: 18px;
+    color: var(--blackColor);
+}
+
+@keyframes pageIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .info {
+        margin-top: 60px;
+    }
+    .content {
+        flex-direction: column; /* Stack image and text on small screens */
+        align-items: center; /* Center content */
+        justify-content: center;
+    }
+    .image-cont, 
+    .text-cont {
+        flex-basis: 100%; /* Both image and text take full width on small screens */
+        max-width: none; /* Remove any max-width restrictions */
+    }
+    .image-cont img {
+        width: 200px;
+    }
+    .text-cont p {
+        padding: 15px 0; /* Add padding for better spacing */
+    }
+    .content .text-cont p{
+        font-size: 15px;
+    }
+    .chandu {
+       display: none; 
+    }
+}

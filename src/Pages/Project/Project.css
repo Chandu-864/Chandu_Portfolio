@@ -1,0 +1,107 @@
+.proj-page {
+    width: 100%;
+    height: 100%;
+    padding: 0 11%;
+    background: var(--eggShell);
+    padding-top: 55px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(80px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.proj-page h1 {
+    margin: auto;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--whiteColor);
+    text-decoration: underline;
+    text-decoration-color: var(--greenColor);
+    text-underline-offset: 8px;
+    background: var(--greenColor);
+    width: 60%;
+    padding: 10px 12px;
+    text-align: center;
+    border-radius: 5px;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0px 4px 6px var(--aboutHead);
+    transition: 1.5s ease;
+    margin-bottom: 40px;
+}
+
+.layout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0px 0 0;
+    transition: 1.5s ease;
+}
+
+.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.box-proj {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px; /* Max width for cards to look consistent */
+    text-align: center;
+    background-color: var(--proCard); /* Off-White */
+    border-radius: 12px; /* Rounded corners for card effect */
+    border: 1px solid var(--lightWood); /* Golden Tan Border */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 4px 12px var(--skillShadow); /* Subtle shadow for lifted effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions */
+    cursor: pointer;
+}
+
+.box-proj:hover {
+    transform: translateY(-10px); /* Lift the card slightly */
+    box-shadow: 0 8px 20px var(--proShadow); /* Increase shadow on hover */
+}
+
+.box-proj img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px dotted var(--blackColor);
+}
+
+.box-proj p {
+    font-size: 14px;
+}
+
+.box-proj a {
+    color: #007BFF; /* Bootstrap blue or any preferred color */
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: 1px solid #007BFF;
+    transition: 0.25s;
+}
+
+.box-proj a:hover {
+    background-color: #007BFF;
+    color: var(--whiteColor);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .proj-page {
+        padding-top: 90px;
+    }
+    .layout {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
