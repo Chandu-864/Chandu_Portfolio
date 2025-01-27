@@ -50,7 +50,7 @@ const projects = [
 const extras = [
     {
         img: res,
-        head: 'Resaturent App',
+        head: 'Restaurent App',
         desc: "Implemented a complete restaurant management application using MERN stack (MongoDB, Express, React, and Node.js)"
     },
     {

@@ -10,7 +10,9 @@ import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
 
-  const [mode, setMode] = useState(true);
+  const [mode, setMode] = useState(()=> {
+    return localStorage.getItem('mode') === 'dark' ? false : true;
+  });
   const [showMenu, setShowMenu] = useState(false);
   const [scrolling, setScrolling] = useState(false);
 
@@ -20,6 +22,22 @@ const Navbar = () => {
   const colorChange = () => {
     document.body.classList.toggle('dark-mode');
   }
+
+  const toggleMode = () => {
+    const newMode = !mode;
+    setMode(newMode);
+    localStorage.setItem('mode', newMode ? 'light' : 'dark'); // Save the mode in localStorage
+    colorChange();
+  };
+
+  useEffect( ()=> {
+    if(mode) {
+      document.body.classList.remove('dark-mode');
+    }
+    else {
+      document.body.classList.add('dark-mode');
+    }
+  },[mode])
 
   const nav = document.getElementById('nav');
   const about = document.getElementById('about');
@@ -56,7 +74,7 @@ const Navbar = () => {
             <li onClick={()=>{setShowMenu(!showMenu);handleScroll(about)}}><HashLink smooth to="#about">About</HashLink></li>
             <li onClick={()=>{setShowMenu(!showMenu);handleScroll(projects)}}><HashLink smooth to= '#projects'>Projects</HashLink></li>
             <li onClick={()=>{setShowMenu(!showMenu);handleScroll(contact)}}><HashLink smooth to= '#contact'>Contact</HashLink></li>
-            <li className="sun" onClick = {()=>{setMode(!mode);setShowMenu(!showMenu);colorChange();}}>
+            <li className="sun" onClick = {()=>{setShowMenu(!showMenu);toggleMode();}}>
                     <Canvas
                       camera={{
                         position:[0,0,5],
@@ -102,7 +120,7 @@ const Navbar = () => {
             <li onClick={()=>{handleScroll(contact)}}><HashLink smooth to= '#contact'>Contact</HashLink></li>
           </ul>
       </div>
-      <div className="sun-big" onClick = {()=>{setMode(!mode);colorChange();}}>
+      <div className="sun-big" onClick = {()=>{toggleMode();}}>
         <Canvas
           camera={{
             position:[0,0,5],
