@@ -7,6 +7,9 @@ export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.glb'],
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    rollupOptions: {
+      external: ['*.glb'],
+    }
   }
 })
