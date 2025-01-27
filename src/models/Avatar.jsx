@@ -17,10 +17,10 @@ const Avatar = (props) => {
   const avatarRef = useRef();
 
   const { nodes, materials } = useGLTF(chanduScene);
-  const {animations:typingAnimation} = useFBX('../src/assets/animations/Typing.fbx')
-  const {animations:waving} = useFBX('../src/assets/animations/Waving.fbx')
-  const {animations: sitting} = useFBX('../src/assets/animations/Sitting.fbx')
-  const {animations: looking} = useFBX('../src/assets/animations/Looking.fbx')
+  const { animations: typingAnimation } = useFBX('animations/Typing.fbx');
+  const { animations: waving } = useFBX('animations/Waving.fbx');
+  const { animations: sitting } = useFBX('animations/Sitting.fbx');
+  const { animations: looking } = useFBX('animations/Looking.fbx');
 
   typingAnimation[0].name = 'typing';
   waving[0].name = 'waving';
