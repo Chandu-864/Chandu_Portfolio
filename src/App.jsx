@@ -7,16 +7,17 @@ import Project from '../src/Pages/Project/Project'
 import Home from './Pages/Home/Home';
 import Contact from './Pages/Contact/Contact';
 import Footer from './Pages/Footer/Footer';
+import { HashRouter } from 'react-router-dom';
 
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
       <Home />
       <About />
       <Project />
       <Contact />
       <Footer />
-    </Router>
+    </HashRouter>
 );
 };
 

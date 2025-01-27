@@ -1,5 +1,5 @@
 {
-  
+  "homepage": "https://github.com/Chandu-864/Chandu_Portfolio.git",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
