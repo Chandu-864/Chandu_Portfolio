@@ -62,7 +62,7 @@
 
 @media (max-width: 768px) {
     .info {
-        margin-top: 60px;
+        margin-top: 55px;
     }
     .content {
         flex-direction: column; /* Stack image and text on small screens */
@@ -85,5 +85,10 @@
     }
     .chandu {
        display: none; 
+    }
+}
+@media (max-width: 600px) {
+    .info {
+        margin-top: 35px;
     }
 }

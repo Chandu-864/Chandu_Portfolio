@@ -8,7 +8,7 @@
   align-items: center; /* Ensure proper vertical alignment */
   justify-content: space-between;
   padding: 0 11%; /* Horizontal padding for the content */
-  border-radius: 0px 0px 12px 12px; /* Rounded bottom corners */
+
   background: var(--eggShell);
 }
 
@@ -31,7 +31,7 @@
   padding: 15px 0;
   
   background: black;
-  border-radius: 0px 0px 12px 12px;
+
   width: 100%;
   background-color: var(--greenColor);
   
@@ -48,6 +48,7 @@
   padding: 10px 15px;
   transition: all 0.3s ease;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .list li a:hover {
@@ -104,7 +105,7 @@
     justify-content: center;
     background-color: var(--whiteColor);
     z-index: 1000;
-    
+    display: none;
 }
 
 .menu-list .items {
@@ -138,6 +139,9 @@
   }
   .sun-big {
     display: none;
+  }
+  .menu-list {
+    display: flex;
   }
   .section {
     padding: 6% 0;

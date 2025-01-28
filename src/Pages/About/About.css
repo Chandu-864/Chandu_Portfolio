@@ -15,8 +15,6 @@
     font-size: 32px;
     font-weight: 600;
     color: var(--whiteColor);
-    text-decoration: underline;
-    text-decoration-color: var(--whiteColor);
     text-underline-offset: 8px;
     background: var(--greenColor);
     width: 60%;
