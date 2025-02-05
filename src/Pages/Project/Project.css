@@ -80,19 +80,21 @@
 }
 
 .box-proj a {
-    color: #007BFF; /* Bootstrap blue or any preferred color */
+    /* color: #007BFF; /* Bootstrap blue or any preferred color */
     text-decoration: none;
     font-weight: 600;
     margin-top: 5px;
     padding: 5px 10px;
     border: 1px solid #007BFF;
     transition: 0.25s;
+    background-color: #007BFF;
+    color: var(--whiteColor);
 }
 
 .box-proj a:hover {
-    background-color: #007BFF;
+    background-color: #007bff;
     color: var(--whiteColor);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
