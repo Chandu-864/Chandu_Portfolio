@@ -63,15 +63,15 @@ const Contact = () => {
                 <h1>Let's Connect</h1>
                 <form className="main-area" onSubmit={handleFormSubmit}>
                     <label className='name-input'>
-                        Name:
-                        <input type="text" name = 'name' value={form.name} placeholder='Your name' required onChange={handleChange} />
+                        <p>Name <span className='req'>*</span></p>
+                        <input type="text" name = 'name' value={form.name} placeholder='Your name' aria-required="true" required onChange={handleChange} />
                     </label>
                     <label className='email-input'>
-                        Email:
-                        <input type="email" name = 'email' value={form.email} placeholder='xxx@gmail.com' required onChange={handleChange} />
+                        <p>Email <span className='req'>*</span></p>
+                        <input type="email" name = 'email' value={form.email} placeholder='xxx@gmail.com' aria-required="true" required onChange={handleChange} />
                     </label>
                     <label className='name-input'>
-                        Message:
+                        Message
                         <textarea type="text" name = 'message' value={form.message} placeholder='Feel free to express thoughts...' rows={4} onChange={handleChange} />
                     </label>
                     <button type='submit'> {status} </button>
