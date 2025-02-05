@@ -59,7 +59,6 @@
     padding: 20px; /* Padding inside the card */
     box-shadow: 0 4px 12px var(--skillShadow); /* Subtle shadow for lifted effect */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions */
-    cursor: pointer;
 }
 
 .box-proj:hover {
@@ -89,6 +88,7 @@
     transition: 0.25s;
     background-color: #007BFF;
     color: var(--whiteColor);
+    cursor: pointer;
 }
 
 .box-proj a:hover {
