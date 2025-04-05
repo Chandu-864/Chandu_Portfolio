@@ -81,7 +81,11 @@ const About = () => {
         {bioState === 'bio' &&  <p> My name is Chandu Thalati. I'm originally from India <span>🇮🇳</span> but 
           moved to the United States <span>🇺🇸</span> in January 2023 and have been living here ever since. </p>}
         {bioState === 'edu' && <p>Master's in Information Technology at Marist University.</p>}
-        {bioState === 'exp' && <p>I worked as a Telecomm assistant managing LAN rooms and providing ethernet and phone service all over marist university.</p>}
+        {bioState === 'exp' && <p>
+          Inventechs(full-time, 2019-2022): Designed and developed responsive web applications using React.js, optimizing performance and improving load times by 30%.
+          Integrated RESTful APIs and used Axios for data fetching. Wrote unit tests with Jest and React Testing Library, and deployed apps via Vercel and Netlify. 
+          Collaborated closely with designers and backend teams to deliver seamless user experiences.
+          </p>}
         {bioState === 'hob' && <p> I enjoy playing badminton and watching anime. I'm a regular at the gym and have a big appetite for good food. 
           I’m an animal lover, and visiting a safari in Africa has been a dream of mine since childhood. </p>}
       </div>
