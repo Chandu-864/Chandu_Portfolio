@@ -78,8 +78,11 @@ const About = () => {
         </div>
       </div>
       <div className="data">
-        {bioState === 'bio' &&  <p> My name is Chandu Thalati. I'm originally from India <span>🇮🇳</span> but 
-          moved to the United States <span>🇺🇸</span> in January 2023 and have been living here ever since. </p>}
+        {bioState === 'bio' &&  <p> 
+            I’m Chandu Thalati, a Frontend Web Developer specializing in React.js, JavaScript, and modern web technologies. 
+            I create interactive, responsive applications focused on delivering clean, high-performance websites. Passionate about continuous learning, 
+            I’m always eager to apply new skills to build innovative web solutions.
+          </p>}
         {bioState === 'edu' && <p>Master's in Information Technology at Marist University.</p>}
         {bioState === 'exp' && <p>
           Inventechs(full-time, 2019-2022): Designed and developed responsive web applications using React.js, optimizing performance and improving load times by 30%.
